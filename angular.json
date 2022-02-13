@@ -104,6 +104,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "egresos-app-redux:build:production",
+            "firebaseProject": "redux-egreso-app",
+            "firebaseHostingSite": "redux-egreso-app"
+          }
         }
       }
     }

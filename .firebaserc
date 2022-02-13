@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "redux-egreso-app": {
+      "hosting": {
+        "egresos-app-redux": [
+          "redux-egreso-app"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "redux-egreso-app"
+  }
+}
