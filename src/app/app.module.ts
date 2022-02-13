@@ -13,34 +13,33 @@ import { FooterComponent } from './share/footer/footer.component';
 import { NavbarComponent } from './share/navbar/navbar.component';
 import { SidebarComponent } from './share/sidebar/sidebar.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
-import { provideAuth,getAuth } from '@angular/fire/auth';
-import { provideFirestore,getFirestore } from '@angular/fire/firestore';
-
+import { provideAuth, getAuth } from '@angular/fire/auth';
+import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LoginComponent,
-    RegisterComponent,
-    DashboardComponent,
-    IngresoEgresoComponent,
-    EstadisticaComponent,
-    DetalleComponent,
-    FooterComponent,
-    NavbarComponent,
-    SidebarComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    ReactiveFormsModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideAuth(() => getAuth()),
-    provideFirestore(() => getFirestore())
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        LoginComponent,
+        RegisterComponent,
+        DashboardComponent,
+        IngresoEgresoComponent,
+        EstadisticaComponent,
+        DetalleComponent,
+        FooterComponent,
+        NavbarComponent,
+        SidebarComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        ReactiveFormsModule,
+        provideFirebaseApp(() => initializeApp(environment.firebase)),
+        provideAuth(() => getAuth()),
+        provideFirestore(() => getFirestore())
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
